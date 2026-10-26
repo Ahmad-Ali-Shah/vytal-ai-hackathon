@@ -891,16 +891,6 @@ export default function ScanPage() {
             ))}
           </select>
 
-          <label style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 700, cursor: 'pointer' }}>
-            <input
-              type="checkbox"
-              checked={isPregnant}
-              onChange={(e) => setIsPregnant(e.target.checked)}
-              disabled={busy || ageGroup !== 'adult'}
-            />
-            🤰 3rd Trimester Pregnancy
-          </label>
-
           <div style={{ marginLeft: 'auto', display: 'flex', gap: '6px' }}>
             <button
               className={`btn btn--ghost ${viewMode === 'patient' ? 'active' : ''}`}
