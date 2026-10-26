@@ -7,6 +7,8 @@ const links = [
   { to: '/', label: 'Scan', end: true },
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/report', label: 'Report' },
+  { to: '/doctors', label: 'Doctor Apps (TBC)' },
+  { to: '/rollout', label: 'Rollout & Zindigi (TBC)' },
 ]
 
 export default function NavBar({ onReplayIntro }) {

@@ -4,6 +4,8 @@ import NavBar from './components/NavBar.jsx'
 import ScanPage from './pages/ScanPage.jsx'
 import DashboardPage from './pages/DashboardPage.jsx'
 import ReportPage from './pages/ReportPage.jsx'
+import DoctorsPartnerPage from './pages/DoctorsPartnerPage.jsx'
+import RolloutRoadmapPage from './pages/RolloutRoadmapPage.jsx'
 import SplashAnimation from './components/SplashAnimation.jsx'
 
 export default function App() {
@@ -17,6 +19,8 @@ export default function App() {
         <Route path="/" element={<ScanPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/report" element={<ReportPage />} />
+        <Route path="/doctors" element={<DoctorsPartnerPage />} />
+        <Route path="/rollout" element={<RolloutRoadmapPage />} />
       </Routes>
     </div>
   )
