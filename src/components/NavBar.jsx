@@ -7,8 +7,8 @@ const links = [
   { to: '/', label: 'Scan', end: true },
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/report', label: 'Report' },
-  { to: '/doctors', label: 'Doctor Apps (TBC)' },
-  { to: '/rollout', label: 'Rollout & Zindigi (TBC)' },
+  { to: '/doctors', label: 'Doctors (TBC)' },
+  { to: '/rollout', label: 'Rollout (TBC)' },
 ]
 
 export default function NavBar({ onReplayIntro }) {
@@ -17,8 +17,8 @@ export default function NavBar({ onReplayIntro }) {
   return (
     <header className="navbar">
       <div className="navbar__inner">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <NavLink to="/" className="navbar__brand" end style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', whiteSpace: 'nowrap', flexShrink: 0 }}>
+          <NavLink to="/" className="navbar__brand" end style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', whiteSpace: 'nowrap' }}>
             <PulseMark size={28} animate />
             <span style={{ fontWeight: 900, letterSpacing: '0.06em', color: '#141413' }}>TIB-E-NIJAT</span>
             <span style={{
